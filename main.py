@@ -21,5 +21,20 @@ for info in range(len(levels)):
     else:
         level_scores.append((coins[info] * 10) + (enemies[info] * -5))
 
-for level in range(len(level_scores)):
-    print(f"Level {level} score: {level_scores[level]}")
+for level in range(len(levels)):
+    print(f"Level {levels[level]} score: {level_scores[level]}")
+print()
+
+actions = [0, 1, 0, 2, 1]
+action_results = []
+
+for action in range(len(actions)):
+    if actions[action] == 0:
+        action_results.append("Collect Coins")
+    elif actions[action] == 1:
+        action_results.append("Fight Enemies")
+    elif actions[action] == 2:
+        action_results.append("Use Power-Up")
+
+for level in range(len(levels)):
+    print(f"Level {levels[level]}: {action_results[level]}")
