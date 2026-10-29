@@ -38,6 +38,7 @@ for action in range(len(actions)):
 
 for level in range(len(levels)):
     print(f"Level {levels[level]}: {action_results[level]}")
+print("")
 
 life_history = []
 
@@ -50,3 +51,11 @@ for level in range(len(levels)):
 
 for level in range(len(levels)):
     print(f"After Level {levels[level]}: {life_history[level]} lives")
+print("")
+
+total_coins = sum(coins)
+
+bonus_coin_levels = [coin for coin in coins if coin >= 7]
+
+print(f"Coins collected: {total_coins}")
+print(f"Levels with 7 or more coins: {bonus_coin_levels}")
