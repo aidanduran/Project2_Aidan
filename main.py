@@ -69,4 +69,11 @@ print(f"Used Power-Ups: {used_powerups}")
 inventory.pop(0)
 inventory.pop(0)
 
-print(f"Remaining Inventory: {inventory}")
+print(f"Remaining Inventory: {inventory}\n")
+
+print(f"Total Coins: {sum(coins)}")
+print(f"Most Coins in One Level: {max(coins)}")
+print(f"Fewest Coins in One Level: {min(coins)}")
+print(f"Average Coins per Level: {sum(coins) / len(coins)}")
+print(f"Total Enemies: {sum(enemies)}")
+print(f"Most Enemies in One Level: {max(enemies)}")
