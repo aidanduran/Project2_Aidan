@@ -38,3 +38,15 @@ for action in range(len(actions)):
 
 for level in range(len(levels)):
     print(f"Level {levels[level]}: {action_results[level]}")
+
+life_history = []
+
+for level in range(len(levels)):
+    if enemies[level] >= 4:
+        if power_ups[level] != "Star":
+            lives -= 1
+
+    life_history.append(lives)
+
+for level in range(len(levels)):
+    print(f"After Level {levels[level]}: {life_history[level]} lives")
