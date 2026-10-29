@@ -58,4 +58,15 @@ total_coins = sum(coins)
 bonus_coin_levels = [coin for coin in coins if coin >= 7]
 
 print(f"Coins collected: {total_coins}")
-print(f"Levels with 7 or more coins: {bonus_coin_levels}")
+print(f"Levels with 7 or more coins: {bonus_coin_levels}\n")
+
+inventory = ["Mushroom", "Star", "Flower"]
+used_powerups = ["Mushroom", "Star"]
+
+print(f"Starting Inventory: {inventory}")
+print(f"Used Power-Ups: {used_powerups}")
+
+inventory.pop(0)
+inventory.pop(0)
+
+print(f"Remaining Inventory: {inventory}")
