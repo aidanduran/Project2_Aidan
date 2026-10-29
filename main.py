@@ -76,4 +76,7 @@ print(f"Most Coins in One Level: {max(coins)}")
 print(f"Fewest Coins in One Level: {min(coins)}")
 print(f"Average Coins per Level: {sum(coins) / len(coins)}")
 print(f"Total Enemies: {sum(enemies)}")
-print(f"Most Enemies in One Level: {max(enemies)}")
+print(f"Most Enemies in One Level: {max(enemies)}\n")
+
+high_scores = [score for score in level_scores if score >= 50]
+print(f"Scores of 50 or Higher: {high_scores}")
