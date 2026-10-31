@@ -79,4 +79,18 @@ print(f"Total Enemies: {sum(enemies)}")
 print(f"Most Enemies in One Level: {max(enemies)}\n")
 
 high_scores = [score for score in level_scores if score >= 50]
-print(f"Scores of 50 or Higher: {high_scores}")
+print(f"Scores of 50 or Higher: {high_scores}\n")
+
+score_history = []
+total_score = 0
+
+for score in level_scores:
+    total_score += score
+    score_history.append(total_score)
+
+for level in range(len(score_history)):
+    print(f"After Level {levels[level]}: {score_history[level]}")
+print("")
+
+print(f"First Two Scores: {score_history[:2]}")
+print(f"Last Two Scores: {score_history[-2:]}")
