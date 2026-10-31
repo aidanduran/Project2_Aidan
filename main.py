@@ -94,3 +94,12 @@ print("")
 
 print(f"First Two Scores: {score_history[:2]}")
 print(f"Last Two Scores: {score_history[-2:]}")
+
+if lives == 0:
+    print("\nGame Over")
+elif total_score >= 250:
+    print("\nAdventure Champion")
+elif total_score >= 150:
+    print("\nGreat Adventure")
+else:
+    print("\nKeep Practicing")
